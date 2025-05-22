@@ -1,17 +1,20 @@
-# Ex.No:3(C)    STRING BUILDER IN JAVA
+# Ex.No:2(B) ACCESS MODIFIERS
 
 ## AIM:
-To Create a java program use replace() method replaces the given String from the specified beginIndex and endIndex and use stringbuilder
+To develop a Java Program to display the addition number using private modifiers only.
 
 ## ALGORITHM :
-1.  Start the Program
-2.	Import `Scanner` and define class `replace`
-3.	In `main`:
--	a) Create `Scanner` object `sc`
--	b) Read a string `str` from user input
-4.	Create a `StringBuilder` object `sb` initialized with `str`
-5.	Use the `replace()` method to replace characters from index 1 to 3 with "Java"
-6.	Print the modified string using `sb.toString()`
+1.	Start the program.
+2.	Define a class named `addition`
+3.	Declare two private integer variables, `num1` and `num2`
+4.	Define a private method `add()` that:
+a)	Returns the sum of `num1` and `num2`
+5.	Define a public method `display(int n1, int n2)` that:
+a)	Assigns `n1` to `num1` and `n2` to `num2`
+b)	Calls the `add()` method and prints the result using `System.out.println`
+6.	Define the `main` method as static
+a)	Create an instance of the `addition` class called `ad`
+b)	Call the `display(8, 9)` method on the `ad` object
 7.	End
 
 
@@ -22,36 +25,46 @@ To Create a java program use replace() method replaces the given String from the
 ## PROGRAM:
  ```
 /*
-Program to implement a String Builder using Java
+Program to implement a access modifiers using Java
 Developed by: Mohamed Muffashal K A
-RegisterNumber:  212222220024
+RegisterNumber: 212222220024
 */
 ```
+
 ## Sourcecode.java:
 ```
-import java.util.Scanner;
-public class StringBufferExample3{  
-public static void main(String args[]){ 
-Scanner sc=new Scanner(System.in);
-String str1=sc.nextLine();
-StringBuffer sb=new StringBuffer(str1);  
-sb.replace(1,3,"Java");  
-System.out.println(sb); 
-}  
-}
-```
+class Addition {
+    private int num1;
+    private int num2;
 
+    private int add() {
+        return num1 + num2;
+    }
+
+    public void display(int n1, int n2) {
+        num1 = n1;
+        num2 = n2;
+        System.out.println("Sum is: " + add());
+    }
+
+    public static void main(String[] args) {
+        Addition ad = new Addition();
+        ad.display(8, 9);
+    }
+}
+
+```
 
 
 
 ## OUTPUT:
 
-![image](https://github.com/user-attachments/assets/236ea5c1-5152-43a3-9032-02b8ae2e1831)
-
-
+```
+OUTPUT
+Sum is: 17
+```
 
 ## RESULT:
-Thus the java program use replace() method replaces the given String from the specified beginIndex and endIndex and use stringbuilder was executed successfully.
-
+Thus the java program to display the addition number using private modifiers only was executed successfully.
 
 
