@@ -1,20 +1,17 @@
-# Ex.No:2(B) ACCESS MODIFIERS
+# Ex.No:3(B) STRING BUFFER IN JAVA
 
 ## AIM:
-To develop a Java Program to display the addition number using private modifiers only.
+To develop a java program use append() method concatenates the given argument with this String and use stringbuffer class.
 
 ## ALGORITHM :
 1.	Start the program.
-2.	Define a class named `addition`
-3.	Declare two private integer variables, `num1` and `num2`
-4.	Define a private method `add()` that:
-a)	Returns the sum of `num1` and `num2`
-5.	Define a public method `display(int n1, int n2)` that:
-a)	Assigns `n1` to `num1` and `n2` to `num2`
-b)	Calls the `add()` method and prints the result using `System.out.println`
-6.	Define the `main` method as static
-a)	Create an instance of the `addition` class called `ad`
-b)	Call the `display(8, 9)` method on the `ad` object
+2.	Import `Scanner` and define class `concat`
+3.	In `main`:
+-	a) Create `Scanner` object `sc`
+-	b) Read two strings `a` and `b` from user input
+4.	Create a `StringBuffer` object `sb` initialized with string `a`
+5.	Append a space and string `b` to `sb`
+6.	Print the concatenated result from `sb`
 7.	End
 
 
@@ -22,49 +19,47 @@ b)	Call the `display(8, 9)` method on the `ad` object
 
 
 
+
 ## PROGRAM:
- ```
+ ```\
 /*
-Program to implement a access modifiers using Java
-Developed by: Mohamed Muffashal K A
-RegisterNumber: 212222220024
+Program to implement a String Buffer using Java
+Developed by: A.DHANUSH
+RegisterNumber: 212222220010
 */
 ```
 
 ## Sourcecode.java:
 ```
-class Addition {
-    private int num1;
-    private int num2;
-
-    private int add() {
-        return num1 + num2;
-    }
-
-    public void display(int n1, int n2) {
-        num1 = n1;
-        num2 = n2;
-        System.out.println("Sum is: " + add());
-    }
-
-    public static void main(String[] args) {
-        Addition ad = new Addition();
-        ad.display(8, 9);
-    }
-}
-
+import java.util.*;
+public class StringBufferExample{  
+public static void main(String args[]){  
+Scanner sc=new Scanner(System.in);
+String str1=sc.nextLine();
+String str2=sc.nextLine();
+StringBuffer sb=new StringBuffer(str1+" ");  
+sb.append(str2);  
+System.out.println(sb);  
+}  
+}  
 ```
+
+
+
 
 
 
 ## OUTPUT:
+```
+Input         Expected       Got
 
+Hello         Hello Java     Hello Java
+Java 
+
+Hi            Hi Welcome     Hi Welcome
+Welcome
 ```
-OUTPUT
-Sum is: 17
-```
+
 
 ## RESULT:
-Thus the java program to display the addition number using private modifiers only was executed successfully.
-
-
+Thus the java program use append() method concatenates the given argument with this String and use stringbuffer class was executed successfully.
