@@ -21,8 +21,8 @@
  ```
 /*
 Program to implement a Hierarchical Inheritance using Java
-Developed by: Onteddu Sirisha
-RegisterNumber: 212222230103
+Developed by: MOHAMED MUFFASHAL K A
+RegisterNumber: 2122222220024
 */
 ```
 
