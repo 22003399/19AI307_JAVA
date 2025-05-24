@@ -28,8 +28,8 @@ In main() access all function using its corresponding Object.
  ```
 /*
 Program to implement a Inner Class using Java
-Developed by: Ontedddu Sirisha
-RegisterNumber: 212222230103
+Developed by: MOHAMED MUFFASHAL K A
+RegisterNumber: 2122222220024
 */
 ```
 
